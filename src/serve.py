@@ -22,4 +22,7 @@ os.chdir(ROOT)
 with socketserver.TCPServer(("0.0.0.0", PORT), http.server.SimpleHTTPRequestHandler) as httpd:
     print(f"Serving at http://localhost:{PORT}")
     print(f"On your phone: http://{get_lan_ip()}:{PORT}")
-    httpd.serve_forever()
+    try:
+        httpd.serve_forever()
+    finally:
+        httpd.server_close()
