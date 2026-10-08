@@ -209,6 +209,7 @@ def build_category_pages(conn: sqlite3.Connection):
                     if descricao:
                         descricao_html = f'<hr><span>{descricao}</span>'
                     print(nome, comum)
+                    comum = comum or ' - '
                     cards_html += (
                         '   <div class="card">'
                         f'    <span class="card-title">{funcao}</span>'
