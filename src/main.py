@@ -76,6 +76,7 @@ def build_index(conn: sqlite3.Connection):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>Casas de Oração</title>
   <link rel="stylesheet" href="generated/static/style.css">
 </head>
@@ -136,6 +137,7 @@ def build_church_pages(conn: sqlite3.Connection):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>{localidade} — Casas de Oração</title>
   <link rel="stylesheet" href="static/style.css">
 </head>
@@ -225,6 +227,7 @@ def build_category_pages(conn: sqlite3.Connection):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
   <title>{cat_nome} — {localidade}</title>
   <link rel="stylesheet" href="static/style.css">
 </head>
