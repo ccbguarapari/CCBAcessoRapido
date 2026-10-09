@@ -36,7 +36,7 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 1rem;
 }
 
@@ -145,12 +145,12 @@ h1 {
   color: #555;
 }
 
-.card a[href^="tel:"] {
+.card a{
   color: #2563eb;
   text-decoration: none;
 }
 
-.card a[href^="tel:"]:hover {
+.card a:hover {
   text-decoration: underline;
 }
 
