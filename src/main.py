@@ -87,8 +87,14 @@ def build_index(conn: sqlite3.Connection):
 </head>
 <body>
   <main>
-    <h1 style="margin-bottom: 0;">Casas de Oração</h1>
-    <h2 style="text-align: center; margin-bottom: 2rem;">Setor Guarapari - ES</h2>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 2rem;">
+      <img src="generated/static/congregacao-crista-no-brasil-logo-png.png" alt="Congregação Cristã no Brasil"
+           style="height: 6rem; width: auto; flex-shrink: 0; border-radius: 10%; overflow: hidden">
+      <div style="text-align: left;">
+        <h1 style="margin: 0;">Casas de Oração</h1>
+        <h2 style="margin: 0;">Setor Guarapari - ES</h2>
+      </div>
+    </div>
     <div class="grid">
 {cards_html}    </div>
   </main>
