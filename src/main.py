@@ -87,7 +87,8 @@ def build_index(conn: sqlite3.Connection):
 </head>
 <body>
   <main>
-    <h1>Casas de Oração</h1>
+    <h1 style="margin-bottom: 0;">Casas de Oração</h1>
+    <h2 style="text-align: center; margin-bottom: 2rem;">Setor Guarapari - ES</h2>
     <div class="grid">
 {cards_html}    </div>
   </main>
