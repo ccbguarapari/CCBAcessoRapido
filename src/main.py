@@ -195,7 +195,7 @@ def build_category_pages(conn: sqlite3.Connection):
                 JOIN funcao f ON pfc.id_funcao = f.id
                 JOIN casadeoracao c ON pfc.id_casadeoracao = c.id
                 WHERE pfc.id_casadeoracao = ? AND f.id_categoria = ?
-                ORDER BY f.id, p.nome;
+                ORDER BY f.ordem, f.id, p.nome;
                 """,
                 (cid, kid),
             ).fetchall()
